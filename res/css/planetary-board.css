@@ -1,0 +1,109 @@
+
+
+section.pboard:first-of-type {
+    height: 400px;
+    box-shadow: 0 0 4px 1px #888;
+}
+
+section.pboard:first-of-type > article:first-of-type {
+    width: calc(200% / 3);
+    height: 400px;
+    float: left;
+    border-right: solid #ccc 2px;
+}
+
+section.pboard:first-of-type > article:first-of-type > h2 {
+    margin: 250px 10px 0 10px;
+}
+
+section.pboard:first-of-type > article:first-of-type > p {
+    margin: 10px;
+}
+
+section.pboard:first-of-type > article > h2,
+section.pboard:first-of-type > article > p {
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+}
+
+section.pboard:first-of-type > article:not(:first-of-type) {
+    width: calc(100% / 3);
+    height: 200px;
+    float: right;
+}
+
+section.pboard:first-of-type > article:last-of-type {
+    border-top: solid #ccc 2px;
+}
+
+section.pboard:first-of-type > article:not(:first-of-type) > h2,
+section.pboard:first-of-type > article:not(:first-of-type) > p {
+    margin: 10px;
+}
+
+section.pboard:not(:first-of-type) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+section.pboard:not(:first-of-type) > article {
+    width: 50%;
+    height: 200px;
+    background: #ccc;
+    box-shadow: 0 0 4px 1px #888;
+}
+
+section.pboard:not(:first-of-type) > article:first-of-type {
+    margin-right: calc(15px / 2);
+}
+
+section.pboard:not(:first-of-type) > article:not(:first-of-type) {
+    margin-left: calc(15px / 2);
+}
+
+section.pboard article {
+    position: relative;
+    overflow: hidden;
+}
+
+section.pboard:first-of-type > article,
+section.pboard article > div 
+{
+    background: url("../img/PLANETARYin.jpg") no-repeat center;
+    background-size: cover;
+    background-color: #777;
+    background-blend-mode: multiply;
+    transition: .4s;
+}
+
+section.pboard:first-of-type > article:hover,
+section.pboard article:hover > div 
+{
+    background-color: #4995C7;
+}
+
+section.pboard article::after {
+    /*content: ' Read more + ';*/
+    position: absolute;
+    border-top: solid grey 2px;
+    border-left: solid grey 2px;
+    color: #eee;
+    background: rgba(0, 0, 0, .4);
+    padding: 5px;
+    bottom: 0;
+    right: 0;
+}
+
+section.pboard article > div {
+    width: calc(100% / 3);
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+}
+
+section.pboard article > h2,
+section.pboard article > p {
+    margin: 10px auto;
+}
