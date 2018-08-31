@@ -1,5 +1,5 @@
-import Vue from './res/vendor/vue.esm.browser.js';
-import httpVueLoader from './res/vendor/httpVueLoader2.js';
+import Vue from '/res/vendor/vue.esm.browser.js';
+import httpVueLoader from '/res/vendor/httpVueLoader2.js';
 
 Vue.config.productionTip = false;
 Vue.config.devtools = false;
